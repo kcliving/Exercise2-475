@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   @Input() activeClass = 'active';
-  constructor(public sharedSvc:TestService) { 
+  constructor() { 
   }
 
   ngOnInit() {
