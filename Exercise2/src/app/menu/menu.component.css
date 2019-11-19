@@ -1,3 +1,8 @@
-li{
-    display: inline;
+nav{
+    text-align: center;
+    
+}
+nav li{
+    display: inline-block;
+    padding: 5px 75px;
 }

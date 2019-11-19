@@ -1,0 +1,8 @@
+.gameinfo{
+    position: absolute;
+    height:1000px;
+    width:250px;
+}
+.infoText{
+    text-align: center;
+}
