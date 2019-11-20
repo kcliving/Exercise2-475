@@ -7,7 +7,6 @@ nav li{
     padding: 5px 75px;
 }
 
-a:visited { text-decoration: none; color:#E4ECFF; }
-a:hover { text-decoration: none; color:#BFC2CB; }
-a:focus { text-decoration: none; color: #E4ECFF; }
-a:hover, .nav-item:active { text-decoration: none; color:#BFC2CB; }
+a:visited,a:focus,a:link  {color:#E4ECFF; }
+a:hover {color:#BFC2CB; }
+a{text-decoration: none;}
