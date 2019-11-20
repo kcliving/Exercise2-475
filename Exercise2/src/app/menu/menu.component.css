@@ -6,3 +6,8 @@ nav li{
     display: inline-block;
     padding: 5px 75px;
 }
+
+a:visited { text-decoration: none; color:#E4ECFF; }
+a:hover { text-decoration: none; color:#BFC2CB; }
+a:focus { text-decoration: none; color: #E4ECFF; }
+a:hover, .nav-item:active { text-decoration: none; color:#BFC2CB; }

@@ -1,13 +1,30 @@
 <script>
-var teams = ["Arizona Cardinals","Atlanta Falcons","Baltimore Ravens","Buffalo Bills","Carolina Panthers","Chicago Bears","Cincinnati Bengals","Cleveland Browns","Dallas Cowboys","Denver Broncos","Detroit Lions","Green Bay Packers","Houston Texans","Indianapolis Colts","Jacksonville Jaguars","Kansas City Chiefs","Los Angeles Chargers","Los Angeles Rams","Miami Dolphins","Minnesota Vikings","New England Patriots","New Orleans Saints","New York Giants","New York Jets","Oakland Raiders","Philadelphia Eagles","Pittsburgh Steelers","San Francisco 49ers","Seattle Seahawks","Tampa Bay Buccaneers","Tennessee Titans","Washington Redskins"];
+        var teams = ["Arizona Cardinals", "Atlanta Falcons", "Baltimore Ravens", "Buffalo Bills", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Kansas City Chiefs", "Los Angeles Chargers", "Los Angeles Rams", "Miami Dolphins", "Minnesota Vikings", "New England Patriots", "New Orleans Saints", "New York Giants", "New York Jets", "Oakland Raiders", "Philadelphia Eagles", "Pittsburgh Steelers", "San Francisco 49ers", "Seattle Seahawks", "Tampa Bay Buccaneers", "Tennessee Titans", "Washington Redskins"];
 
 </script>
 <button onclick="GenerateTeams()">Generate Games</button>
-<div class = "container" style=" position:absolute; left:50px;height: 1000px;width: 1250px;background-color:black ;">
-        <div class = "gameinfo"  style= "left: 50; background-color: green;"><h3 class = "infoText">Away Team Name:</h3></div>
-        <div class = "gameinfo" style = "left:250px;background-color: deeppink;"><h3 class = "infoText">Record:</h3></div>
-        <div class = "gameinfo" style = "left:500px;background-color: blue"><h3 class = "infoText">Scores:</h3></div>
-        <div class = "gameinfo" style = "left:750px;background-color: red;"><h3 class = "infoText">Home Team Record:</h3></div>
-        <div class = "gameinfo" style = "left:1000px;background-color:yellow;"><h3 class = "infoText">Home Team Name:</h3></div>
-</div>
 
+<table style="widows: 100%;">
+        <tr>
+                <th>Select Away team</th>
+                <th>Away Spread</th>
+                <th>Away Team</th>
+                <th>Away Team Record</th>
+                <th>Final Score</th>
+                <th>Home Team Record</th>
+                <th>Home Team</th>
+                <th>Home Spread</th>
+                <th>Select Home Team</th>
+        </tr>
+        <tr>
+                <td><input type="checkbox"></td>
+                <td>+4.5</td>
+                <td>Washington Redskins</td>
+                <td>2-8</td>
+                <td>3-39</td>
+                <td>5-5</td>
+                <td>Philadelphia Eagles</td>
+                <td>-4.5</td>
+                <td><input type="checkbox"></td>
+        </tr>
+</table>
