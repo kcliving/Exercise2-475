@@ -22,7 +22,7 @@ import { BetsComponent } from './bets/bets.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
