@@ -8,7 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { PersonalComponent } from './personal/personal.component';
 import { BetsComponent } from './bets/bets.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { BetsComponent } from './bets/bets.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

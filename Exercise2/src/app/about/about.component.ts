@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {TestService} from '../test.service'; 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,7 +6,7 @@ import {TestService} from '../test.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private sharedSvc:TestService) { }
+  constructor() { }
 
   ngOnInit() {
   }
