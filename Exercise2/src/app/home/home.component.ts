@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TestService} from '../test.service';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-home',
@@ -7,17 +7,20 @@ import {TestService} from '../test.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
+  spreads: any[]; // our variable to hold our data
 
-  constructor(private sharedSvc:TestService) { 
-    var teams = ["Arizona Cardinals","Atlanta Falcons","Baltimore Ravens","Buffalo Bills","Carolina Panthers","Chicago Bears","Cincinnati Bengals","Cleveland Browns","Dallas Cowboys","Denver Broncos","Detroit Lions","Green Bay Packers","Houston Texans","Indianapolis Colts","Jacksonville Jaguars","Kansas City Chiefs","Los Angeles Chargers","Los Angeles Rams","Miami Dolphins","Minnesota Vikings","New England Patriots","New Orleans Saints","New York Giants","New York Jets","Oakland Raiders","Philadelphia Eagles","Pittsburgh Steelers","San Francisco 49ers","Seattle Seahawks","Tampa Bay Buccaneers","Tennessee Titans","Washington Redskins"];
-  
+  constructor(private apiService:ApiService) { 
+    this.spreads = [];
   }
-
+  /* on init, call getSpread() method and subscribe to the returned
+     observable which sends GET to the football endpoint
+  */
   ngOnInit() {
-  }
-  GenerateTeams() {
-    alert("Hello");
+    this.apiService.getSpreads().subscribe((spreads: any[])=> {
+      this.spreads=spreads;
+      console.log(spreads);
+    });
+
   }
 
 }
