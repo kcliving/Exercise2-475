@@ -7,7 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  spreads: any[]; // our variable to hold our data
+  spreads; // our variable to hold our data
 
   constructor(private apiService:ApiService) { 
     this.spreads = [];
@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
      observable which sends GET to the football endpoint
   */
   ngOnInit() {
-    this.apiService.getSpreads().subscribe((spreads: any[])=> {
+    this.apiService.getSpreads().subscribe((spreads: any)=> {
       this.spreads=spreads;
       console.log(spreads);
     });
