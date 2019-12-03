@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-
+// argument within the api controls which week of spreads is returned
+// perhaps change this?
 const WeeklySpreadsUrl = 'http://localhost:3002/api/getSpreads';
-const myUserUrl = '';
-const myUserBets = '';
+// this login url returns user information
+const myLoginUrl = '';
+// this login adds a user to the db, registers them, but does not log them in!
+const myRegisterUrl = '';
 
 @Injectable({
   providedIn: 'root'
@@ -17,12 +20,12 @@ export class ApiService {
     return this.httpClient.get(WeeklySpreadsUrl);
   }
 
-  // gets the user
-  public getUser(){
+  // ? calls get on the api
+  public login(){
 
   }
-  // get user bets
-  public getBets() {
+  // get user bets ? calls post on the api
+  public register() {
     
   }
 }
