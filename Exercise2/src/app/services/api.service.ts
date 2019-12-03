@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 const WeeklySpreadsUrl = 'http://localhost:3002/api/getSpreads';
+const myUserUrl = '';
+const myUserBets = '';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +15,14 @@ export class ApiService {
 
   public getSpreads(){
     return this.httpClient.get(WeeklySpreadsUrl);
+  }
+
+  // gets the user
+  public getUser(){
+
+  }
+  // get user bets
+  public getBets() {
+    
   }
 }
