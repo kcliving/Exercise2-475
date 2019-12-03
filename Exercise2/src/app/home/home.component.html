@@ -1,17 +1,21 @@
-
-<table>
+<div style="position: absolute;top:100px;left:550px;">
+<table >
      <tr>
+          <th> </th>
           <th>Home Team</th>
           <th>Home Team Spread</th>
           <th>Away Team Spread</th>
           <th>Away Team</th>
+          <th></th>
      </tr>
      <tr *ngFor = "let spread of spreads">
-          
+          <input type="checkbox">
           <td>{{spread.TEAM1}}</td>
           <td>{{spread.SPREAD1}}</td>
           <td>{{spread.SPREAD2}}</td>
           <td>{{spread.TEAM2}}</td>
-
+          <input type="checkbox">
      </tr>
 </table>
+<button type="submit">Submit Bet</button>
+</div>
