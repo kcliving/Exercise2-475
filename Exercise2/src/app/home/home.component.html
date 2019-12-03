@@ -1,7 +1,17 @@
-<ul>
-<li *ngFor="let spread of spreads">
-<p> {{spread.SPREAD1}} • {{ spread.TEAM1 }} ||
-     {{ spread.TEAM2 }} • {{spread.SPREAD2}}
-</p>
-</li>
-</ul>
+
+<table>
+     <tr>
+          <th>Home Team</th>
+          <th>Home Team Spread</th>
+          <th>Away Team Spread</th>
+          <th>Away Team</th>
+     </tr>
+     <tr *ngFor = "let spread of spreads">
+          
+          <td>{{spread.TEAM1}}</td>
+          <td>{{spread.SPREAD1}}</td>
+          <td>{{spread.SPREAD2}}</td>
+          <td>{{spread.TEAM2}}</td>
+
+     </tr>
+</table>
