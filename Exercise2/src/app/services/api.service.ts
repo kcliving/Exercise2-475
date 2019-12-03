@@ -20,12 +20,12 @@ export class ApiService {
     return this.httpClient.get(WeeklySpreadsUrl);
   }
 
-  // ? calls get on the api
-  public login(){
+  // ? calls getUser on the api -> get current user info
+  public login(username: string, password: string){
 
   }
-  // get user bets ? calls post on the api
-  public register() {
+  //  ? calls postUser on the api -> register new user
+  public register(username: string, name: string, passsword: string) {
     
   }
 }
