@@ -4,9 +4,9 @@ import {HttpClient} from '@angular/common/http';
 // perhaps change this?
 const WeeklySpreadsUrl = 'http://localhost:3002/api/getSpreads';
 // this login url returns user information
-const myLoginUrl = '';
+const myLoginUrl = 'http://localhost:3002/api/getUser';
 // this login adds a user to the db, registers them, but does not log them in!
-const myRegisterUrl = '';
+const myRegisterUrl = 'http://localhost:3002/api/postUser';
 
 @Injectable({
   providedIn: 'root'
