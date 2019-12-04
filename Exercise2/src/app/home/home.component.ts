@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
+import { TestBed } from '@angular/core/testing';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +21,6 @@ export class HomeComponent implements OnInit {
       this.spreads=spreads;
       console.log(spreads);
     });
-
   }
-
+ 
 }
